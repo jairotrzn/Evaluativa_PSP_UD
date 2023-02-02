@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Ejercicio1/Echo_Client/Echo_Client.iml" filepath="$PROJECT_DIR$/Ejercicio1/Echo_Client/Echo_Client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ejercicio1/Echo_Server/Echo_Server.iml" filepath="$PROJECT_DIR$/Ejercicio1/Echo_Server/Echo_Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Evaluativa_PSP.iml" filepath="$PROJECT_DIR$/.idea/Evaluativa_PSP.iml" />
+    </modules>
+  </component>
+</project>
