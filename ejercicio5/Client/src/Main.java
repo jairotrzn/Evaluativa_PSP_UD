@@ -6,18 +6,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
-        try ( Socket socket = new Socket("localhost",60000);
+    System.out.println("Soy el cliente");
+        try ( Socket socket = new Socket("localhost",6000);
               ObjectInputStream objectInputStream = new ObjectInputStream(socket.getInputStream());
               ObjectOutputStream objectOutputStream = new ObjectOutputStream((socket.getOutputStream()));
-              Scanner scanner = new Scanner(System.in)){
+              Scanner scanner = new Scanner(System.in))
+        {
 
             Product producto = (Product) objectInputStream.readObject();
             mostrarDatos(producto);
             modificarProducto(producto,datosComprador(scanner));
             objectOutputStream.writeObject(producto);
-
-
+            System.out.println("Los datos que voy a devolver son" + producto.nombreProducto + producto.getNombreComprador() + producto.getPrecio() );
 
         }catch (IOException io){
             io.getMessage();
@@ -27,12 +27,12 @@ public class Main {
     }
 
     public static void mostrarDatos (Product product){
-        System.out.println("Product name :" + product.getNombreProducto() +
+        System.out.println("Product name :" + product.getNombreProducto() + "\n" +
                 "Product initial price : " + product.getPrecio());
     }
 
     public static String[] datosComprador(Scanner scanner){
-        System.out.println("Introduce nombre y precio de puja");
+        System.out.println("\n Introduce nombre y precio de puja");
         return scanner.nextLine().split(" ");
     }
 
