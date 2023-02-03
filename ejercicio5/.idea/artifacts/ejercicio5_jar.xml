@@ -2,7 +2,7 @@
   <artifact type="jar" name="ejercicio5:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/ejercicio5_jar</output-path>
     <root id="archive" name="ejercicio5.jar">
-      <element id="module-output" name="Product" />
+      <element id="module-output" name="Auction_Model" />
     </root>
   </artifact>
 </component>

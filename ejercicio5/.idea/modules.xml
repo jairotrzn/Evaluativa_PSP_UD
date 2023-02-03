@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Client/Client.iml" filepath="$PROJECT_DIR$/Client/Client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Product/Product.iml" filepath="$PROJECT_DIR$/Product/Product.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Server/Server.iml" filepath="$PROJECT_DIR$/Server/Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Auction_Client/Auction_Client.iml" filepath="$PROJECT_DIR$/Auction_Client/Auction_Client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Auction_Model/Auction_Model.iml" filepath="$PROJECT_DIR$/Auction_Model/Auction_Model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Auction_Server/Auction_Server.iml" filepath="$PROJECT_DIR$/Auction_Server/Auction_Server.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/ejercicio5.iml" filepath="$PROJECT_DIR$/.idea/ejercicio5.iml" />
     </modules>
   </component>
