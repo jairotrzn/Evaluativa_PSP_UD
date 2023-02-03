@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ejercicio5:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6863bc9a-c1c3-4a46-b2e9-68316fb14989" name="Changes" comment="Casi acabado el ejercicio 5">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ejercicio5_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/.idea/libraries/Product.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/ServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/.idea/artifacts/Product_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Product/.idea/artifacts/Product_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product/.idea/modules.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,16 +41,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
-    <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/jairo/Downloads/Evaluativa_PSP/ejercicio5/Product/out",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jairo\Downloads\Evaluativa_PSP\ejercicio5\Product" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -86,12 +99,31 @@
       <option name="project" value="LOCAL" />
       <updated>1675384634484</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ejercicio 5 finalizado">
+      <created>1675413989996</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675413989996</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Casi acabado el ejercicio 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Casi acabado el ejercicio 5" />
+    <MESSAGE value="Ejercicio 5 finalizado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 5 finalizado" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ejercicio5$Main.ic" NAME="Main Coverage Results" MODIFIED="1675384575310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
