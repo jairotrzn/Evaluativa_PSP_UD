@@ -1,3 +1,4 @@
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -10,6 +11,7 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<Socket> clientes = new ArrayList<>();
         ArrayList<Product> productos = new ArrayList<>();
+        ObjectInputStream objectInputStream;
         try (ServerSocket serverSocket = new ServerSocket(6000);
              Scanner scanner = new Scanner(System.in);
         ) {
@@ -19,31 +21,30 @@ public class Main {
                 clientes.add(socket);
                 System.out.println("Clientes conectados a la subasta " + clientes.size());
             }
-            System.out.println("Introduce nombre del producto a subastar");
-            String nombre = scanner.nextLine();
+//            System.out.println("Introduce nombre del producto a subastar");
+//            String nombre = scanner.nextLine();
+//
+//            System.out.println("Introduce precio inicial de la puja");
+//            double precio = scanner.nextDouble();
 
-            System.out.println("Introduce precio inicial de la puja");
-            double precio = scanner.nextDouble();
-
-            Product product = new Product(nombre,precio);
+            Product product = new Product("Gafas", 10);
             for (Socket cliente : clientes) {
-                ServerThread serverThread = new ServerThread(cliente,product);
+                ServerThread serverThread = new ServerThread(cliente, product);
                 serverThread.start();
-               // productos.add(serverThread.getProduct());
-                //ObjectOutputStream objectOutputStream = new ObjectOutputStream(cliente.getOutputStream());
-                //objectOutputStream.writeObject(product);
 
-                ObjectInputStream objectInputStream = new ObjectInputStream(cliente.getInputStream());
+                objectInputStream = new ObjectInputStream(cliente.getInputStream());
                 productos.add((Product) objectInputStream.readObject());
 
             }
 
-            for (Product products : productos) {
-                System.out.print("Los datos son " + products.getNombreProducto() + products.getNombreComprador() +
-                        products.getPrecio() + "  y la longitud es " + productos.size());
+            Product productoFinal =  obtenerGanador(productos);
+            String linea = "EL GANADOR DE LA SUBASTA ES: " + productoFinal.getNombreComprador() + " " + productoFinal.getPrecio();
+            for (Socket socket : clientes) {
+                DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
+                dataOutputStream.writeUTF(linea);
             }
 
-            System.out.println("El ganador de la puja es :" + obtenerGanador(productos));
+
         } catch (IOException io) {
             io.getMessage();
         } catch (ClassNotFoundException e) {
@@ -51,7 +52,7 @@ public class Main {
         }
     }
 
-    public static String obtenerGanador(ArrayList<Product> productos) {
+    public static Product obtenerGanador(ArrayList<Product> productos) {
         String linea = "";
         double precio = 0;
         Product productGanador = null;
@@ -60,6 +61,6 @@ public class Main {
                 productGanador = product;
             }
         }
-        return productGanador.nombreComprador + " " + productGanador.getPrecio();
+        return productGanador;
     }
 }

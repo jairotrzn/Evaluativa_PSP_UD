@@ -17,22 +17,13 @@ public class ServerThread extends Thread{
     public void run() {
         ObjectInputStream objectInputStream = null;
         ObjectOutputStream objectOutputStream = null;
-
         try {
             objectOutputStream = new ObjectOutputStream(socket.getOutputStream());
             objectOutputStream.writeObject(product);
 
-            objectInputStream = new ObjectInputStream(socket.getInputStream());
-            Product producto = (Product) objectInputStream.readObject();
-
         }catch (IOException io){
             io.getMessage();
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
         }
     }
 
-    public Product getProduct(){
-        return this.product;
-    }
 }
