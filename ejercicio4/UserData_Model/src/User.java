@@ -7,7 +7,7 @@ public class User implements Serializable {
     private String password;
     private String registro;
 
-    public User() {
+    public User() {sc
         this.name ="";
         this.password ="";
         this.registro = LocalDate.now().toString();

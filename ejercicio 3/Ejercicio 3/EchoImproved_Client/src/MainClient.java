@@ -32,12 +32,10 @@ public class MainClient {
             } while (!mensaje.equals(BYE));
 
         } catch (UnknownHostException e) {
-            System.err.println("Host Offline");
+            System.err.println(e);
         } catch (IOException e) {
             System.err.println(e);
         }
-
-        System.out.println("Exit");
         scanner.close();
 
     }

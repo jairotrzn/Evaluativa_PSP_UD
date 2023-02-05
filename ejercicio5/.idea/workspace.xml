@@ -10,29 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6863bc9a-c1c3-4a46-b2e9-68316fb14989" name="Changes" comment="Casi acabado el ejercicio 5">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ejercicio5_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ejercicio5_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Auction_Client/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/.idea/libraries/Product.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Auction_Client/.idea/libraries/Product.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Auction_Client/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Auction_Client/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Auction_Client/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/Client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Auction_Client/Auction_Client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auction_Client/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Auction_Model/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/.idea/artifacts/Product_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Auction_Model/.idea/artifacts/Product_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Auction_Model/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Auction_Model/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/Product.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Auction_Model/Auction_Model.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auction_Model/src/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Auction_Server/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Auction_Server/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Auction_Server/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Auction_Server/Auction_Server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auction_Server/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auction_Server/src/ServerThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +35,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
-    <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ejercicio6" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "C:/Users/jairo/Downloads/Evaluativa_PSP/ejercicio5",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
