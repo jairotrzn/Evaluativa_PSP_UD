@@ -16,7 +16,7 @@ public class Main {
              Scanner scanner = new Scanner(System.in);
         ) {
             System.out.println("Escuchando...");
-            while (clientes.size() != 2) {
+            while (clientes.size() != 3) {
                 Socket socket = serverSocket.accept();
                 clientes.add(socket);
                 System.out.println("Clientes conectados a la subasta " + clientes.size());
@@ -27,19 +27,19 @@ public class Main {
 //            System.out.println("Introduce precio inicial de la puja");
 //            double precio = scanner.nextDouble();
 
-            Product product = new Product("Gafas", 10);
+            Product product = new Product("XBox", 300);
             for (Socket cliente : clientes) {
                 ServerThread serverThread = new ServerThread(cliente, product);
                 serverThread.start();
-
-                objectInputStream = new ObjectInputStream(cliente.getInputStream());
-                productos.add((Product) objectInputStream.readObject());
-
             }
-
+            for(Socket socket : clientes){
+                objectInputStream = new ObjectInputStream(socket.getInputStream());
+                productos.add((Product) objectInputStream.readObject());
+            }
             Product productoFinal =  obtenerGanador(productos);
             String linea = "EL GANADOR DE LA SUBASTA ES: " + productoFinal.getNombreComprador() + " " + productoFinal.getPrecio();
             for (Socket socket : clientes) {
+
                 DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
                 dataOutputStream.writeUTF(linea);
             }
